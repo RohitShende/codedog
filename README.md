@@ -34,6 +34,7 @@ codedog currently only supports python 3.10.
 
 1. Get a github pull request
 ```python
+from codedog.retrievers import GithubRetriever
 from github import Github
 
 github_token="YOUR GITHUB TOKEN"
@@ -41,7 +42,7 @@ repository = "codedog-ai/codedog"
 pull_request_number = 2
 
 github = Github(github_token)
-retriever = GithubRetriever(github, repository, pull_requeest_number)
+retriever = GithubRetriever(github, repository, pull_request_number)
 ```
 
 
