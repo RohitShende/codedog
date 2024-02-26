@@ -71,6 +71,8 @@ print(summary)
 3. Review each code file changes in the pull request
 
 ```python
+from codedog.chains import CodeReviewChain
+
 review_chain = CodeReviewChain.from_llm(llm=llm35, verbose=True)
 
 reviews = review_chain({"pull_request": retriever.pull_request}, include_run_info=True)
