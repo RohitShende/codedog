@@ -51,6 +51,7 @@ retriever = GithubRetriever(github, repository, pull_request_number)
 Since `PRSummaryChain` uses langchain's output parser, we suggest to use GPT-4 to improve formatting accuracy.
 
 ```python
+from langchain.chat_models import ChatOpenAI
 from codedog.chains import PRSummaryChain
 
 openai_api_key = "YOUR OPENAI API KEY WITH GPT4"
